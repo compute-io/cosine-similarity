@@ -10,6 +10,10 @@
     {
       "name": "Athan Reines",
       "email": "kgryte@gmail.com"
+    },
+    {
+      "name": "Philipp Burckhardt",
+      "email": "pburckhardt@outlook.com"
     }
   ],
   "scripts": {
@@ -25,12 +29,29 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "similarity",
+    "information theory",
+    "distance",
+    "dist",
+    "array",
+    "vector",
+    "mathematics",
+    "math",
+    "geometry",
+    "algebra",
+    "linear algebra",
+    "cosine"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/cosine-similarity/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compute-dot": "^1.1.0",
+    "compute-l2norm": "^1.1.0",
+    "validate.io-array": "^1.0.5",
+    "validate.io-function": "^1.0.2"
+  },
   "devDependencies": {
     "chai": "2.x.x",
     "mocha": "2.x.x",

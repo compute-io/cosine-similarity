@@ -1,8 +1,15 @@
-cosine-similarity
+Cosine Similarity
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Computes the cosine similarity between two arrays.
+> Computes the [cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays.
+
+[Cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity) defines vector similarity in terms of the angle separating two vectors.
+
+<div class="equation" align="center" data-raw-text="" data-equation="eq:cosine_similarity">
+	<img src="" alt="Cosine similarity formula">
+	<br>
+</div>
 
 
 ## Installation
@@ -17,18 +24,75 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-cosine-similarity' );
+var similarity = require( 'compute-cosine-similarity' );
 ```
 
-#### foo( arr )
+#### similarity( x, y[, accessor] )
 
-What does this function do?
+Computes the [cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity) between two `arrays`.
+
+
+``` javascript
+var x = [ 5, 23, 2, 5, 9 ],
+    y = [ 3, 21, 2, 5, 14 ];
+
+var s = similarity( x, y );
+// returns 
+```
+
+For object `arrays`, provide an accessor `function` for accessing `numeric` values.
+
+``` javascript
+var x = [
+	{'x':2},
+	{'x':4},
+	{'x':5}
+];
+
+var y = [
+	[1,3],
+	[2,1],
+	[3,5]
+];
+
+function getValue( d, i, j ) {
+	if ( j === 0 ) {
+		return d.x;
+	}
+	return d[ 1 ];
+}
+
+var s = similarity( x, y, getValue );
+// returns 
+```
+
+The accessor `function` is provided three arguments:
+
+-	__d__: current datum.
+-	__i__: current datum index.
+-	__j__: array index; e.g., array `x` has index `0`, and array `y` has index `1`.
+
+
+If provided empty `arrays`, the function returns `null`.
+
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-cosine-similarity' );
+var similarity = require( 'compute-cosine-similarity' );
+
+var x = new Array( 100 ),
+	y = new Array( 100 ),
+	s;
+
+for ( var i = 0; i < x.length; i++ ) {
+	x[ i ] = Math.round( Math.random()*100 );
+	y[ i ] = Math.round( Math.random()*100 );
+}
+s = similarity( x, y );
+
+console.log( s );
 ```
 
 To run the example code from the top-level application directory,
@@ -74,7 +138,7 @@ $ make view-cov
 
 ## Copyright
 
-Copyright &copy; 2015. Athan Reines.
+Copyright &copy; 2015. The Compute.io Authors.
 
 
 [npm-image]: http://img.shields.io/npm/v/compute-cosine-similarity.svg
