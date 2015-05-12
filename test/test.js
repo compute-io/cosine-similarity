@@ -107,6 +107,8 @@ describe( 'compute-cosine-similarity', function tests() {
 		dat2 = [ 3, 1, 5, 3, 7, 2 ];
 
 		actual =  similarity( dat1, dat2 );
+
+		// 1 - cosine distance
 		expected = 1 - 0.04397873;
 
 		assert.closeTo( actual, expected, 1e-7 );
@@ -133,6 +135,8 @@ describe( 'compute-cosine-similarity', function tests() {
 		];
 
 		actual = similarity( dat1, dat2, getValue );
+
+		// 1 - cosine distance
 		expected = 1- 0.04397873;
 
 		assert.closeTo( actual, expected, 1e-7 );
