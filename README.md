@@ -63,7 +63,7 @@ function getValue( d, i, j ) {
 }
 
 var s = similarity( x, y, getValue );
-// returns ~0.975
+// returns ~0.882
 ```
 
 The accessor `function` is provided three arguments:
