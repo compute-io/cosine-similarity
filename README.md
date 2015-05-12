@@ -138,7 +138,7 @@ $ make view-cov
 
 ## Copyright
 
-Copyright &copy; 2015. The Compute.io Authors.
+Copyright &copy; 2015. The Compute.io Authors. All rights reserved.
 
 
 [npm-image]: http://img.shields.io/npm/v/compute-cosine-similarity.svg
