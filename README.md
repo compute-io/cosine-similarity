@@ -37,7 +37,7 @@ var x = [ 5, 23, 2, 5, 9 ],
     y = [ 3, 21, 2, 5, 14 ];
 
 var s = similarity( x, y );
-// returns 
+// returns ~0.975
 ```
 
 For object `arrays`, provide an accessor `function` for accessing `numeric` values.
@@ -63,7 +63,7 @@ function getValue( d, i, j ) {
 }
 
 var s = similarity( x, y, getValue );
-// returns 
+// returns ~0.975
 ```
 
 The accessor `function` is provided three arguments:
