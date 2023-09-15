@@ -1,6 +1,6 @@
 {
   "name": "compute-cosine-similarity",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Computes the cosine similarity between two arrays.",
   "author": {
     "name": "Athan Reines",
