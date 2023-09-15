@@ -6,6 +6,7 @@
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
   },
+  "types": "./types/index.d.ts",
   "contributors": [
     {
       "name": "Athan Reines",
