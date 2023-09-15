@@ -1,6 +1,6 @@
 Cosine Similarity
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 > Computes the [cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays.
 
@@ -144,17 +144,8 @@ Copyright &copy; 2015. The Compute.io Authors. All rights reserved.
 [npm-image]: http://img.shields.io/npm/v/compute-cosine-similarity.svg
 [npm-url]: https://npmjs.org/package/compute-cosine-similarity
 
-[travis-image]: http://img.shields.io/travis/compute-io/cosine-similarity/master.svg
-[travis-url]: https://travis-ci.org/compute-io/cosine-similarity
-
 [coveralls-image]: https://img.shields.io/coveralls/compute-io/cosine-similarity/master.svg
 [coveralls-url]: https://coveralls.io/r/compute-io/cosine-similarity?branch=master
-
-[dependencies-image]: http://img.shields.io/david/compute-io/cosine-similarity.svg
-[dependencies-url]: https://david-dm.org/compute-io/cosine-similarity
-
-[dev-dependencies-image]: http://img.shields.io/david/dev/compute-io/cosine-similarity.svg
-[dev-dependencies-url]: https://david-dm.org/dev/compute-io/cosine-similarity
 
 [github-issues-image]: http://img.shields.io/github/issues/compute-io/cosine-similarity.svg
 [github-issues-url]: https://github.com/compute-io/cosine-similarity/issues
